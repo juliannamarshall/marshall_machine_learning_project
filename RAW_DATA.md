@@ -5,7 +5,7 @@
 ### 1. Crime Data
 Dataset: Los Angeles Crime Data Analysis 
 Source: Kaggle  
-Link: [[https://www.kaggle.com/datasets/oscarbatiz/los-angeles-airbnb-listings](https://www.kaggle.com/code/tsungchechiang/los-angeles-crime-data-analysis)]([https://www.kaggle.com/datasets/oscarbatiz/los-angeles-airbnb-listings](https://www.kaggle.com/code/tsungchechiang/los-angeles-crime-data-analysis))
+Link: [https://www.kaggle.com/datasets/oscarbatiz/los-angeles-airbnb-listings](https://www.kaggle.com/code/tsungchechiang/los-angeles-crime-data-analysis))
 Description: Contains reported crimes in Los Angeles, including location, type of crime, and date.
 
 ### 2. Airbnb Listings Data
