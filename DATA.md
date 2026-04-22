@@ -23,6 +23,6 @@ The datasets were merged based on location to compare crime rates with Airbnb li
 
 
 ## Notebook References
--classification.ipynb
+- classification.ipynb
 - analysis.ipynb
 - marshall.ipynb
