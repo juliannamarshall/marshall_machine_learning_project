@@ -1,28 +1,56 @@
 # Data Exploration and Preparation
 
 ## Overview
-Both datasets were explored and cleaned before analysis. The goal was to make them compatible for comparison.
+The datasets required significant preprocessing before analysis. The goals was to clean, align, and reduct the data into meaningful features for modeling.
+
+---
 
 ## Crime Data Processing
-- Removed missing values
 - Filtered relevant columns (location, crime type)
-- Aggregated crime counts by area
+- Aggregated crime incidents by geographic area
+- Created a new feature, crime intesity (crime count per area)
 
 ## Airbnb Data Processing
-- Removed null values
-- Selected relevant features (price, neighborhood, availability)
-- Standardized location naming
+- Removed missing and null values
+- Selected relevant numerical features: price, bedrooms, bathrooms, number of reviews, availability 365
+- Removed unnecessary text based columns
+- Standardized formats for analysis
 
-## Merging Data
-The datasets were merged based on location to compare crime rates with Airbnb listings.
+
+---
+
+## Feature Engineering
+- Matched Airbnb listings and crime data using location
+- Converted raw data into structured numerical features
+- Ensured compatibility across datasets for modeling
+
+---
+
+## Dimensionality Reduction (PCA)
+Principal Component Analysis was applied to understand variance structure:
+
+- PC1 explained ~36% of variance
+- PC2 explained ~22% of variance
+- Total of ~59% variance explained with two components
+
+This indicates that a small number of features capture most of the dataset’s structure.
+
+---
+
+## Clustering (K-Means)
+K-Means clustering was applied to Airbnb data:
+
+- Identified 3 clusters
+- Clusters represent different types of listings:
+  - Lower-priced, high-availability listings
+  - Mid-range listings
+  - Higher-priced, lower-availability listings
+
+This reveals natural groupings in the Airbnb market.
+
+---
 
 ## Key Observations
-- Crime is concentrated in specific areas
-- Airbnb listings are unevenly distributed
-- Some high-tourism areas still have notable crime rates
-
-
-## Notebook References
-- classification.ipynb
-- analysis.ipynb
-- marshall.ipynb
+- Airbnb listings are not evenly distributed
+- Strong internal structure exists in pricing and availability
+- Crime data required heavy transformation to be usable
