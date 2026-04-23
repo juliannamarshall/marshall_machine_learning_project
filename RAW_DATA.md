@@ -13,3 +13,11 @@ Dataset: Los Angeles Airbnb Listings
 Source: Kaggle 
 Link: [https://www.kaggle.com/datasets/oscarbatiz/los-angeles-airbnb-listings](https://www.kaggle.com/datasets/oscarbatiz/los-angeles-airbnb-listings)
 Description: Contains Airbnb listings in Los Angeles, including price, location, and availability.
+
+## Data Acquisition
+Both datasets were downloaded from Kaggle and loaded into Jupyter notebooks for processing and analysis.
+
+## Notes on Raw Data
+- Airbnb data contained missing values and mixed data types
+- Crime data contained detailed incident-level records that required aggregation
+- Location formats differed between datasets and required standardization
