@@ -1,13 +1,18 @@
 ## Overview
-This project explores the relationship between crime rates and Airbnb listings across different areas of Los Angeles.
+This project explores both the internal structure of Airbnb listings in Los Angeles and the external influence of crime rates on those listings. Using clustering, regression, classification, and dimensionality reduction techniques, the analysis uncovers patterns in pricing, availability, and lcoation while evaluating whther crime is a meaningful predictor of Airbnb activity. 
 
 ## Goals
-Using publicly available datasets, the goal was to determine whether higher crime rates influence Airbnb availability and distribution.
+- Identify patterns in Airbnb listings using unsupervised learning
+- Predict Airbnb prices using regression models
+- Classify listing behavior using machine learning models
+- Evaluate whether crime rates influence Airbnb distribution
 
-- Analyze crime patterns in Los Angeles
-- Explore Airbnb listing distribution
-- Merge datasets to identify relationships
-- Build machine learning models to analyze patterns
+## Methods Used
+- Data cleaning and feature engineering
+- Principal Component Analysis
+- K-Means Clustering
+- Linear Regression
+- Decision Tree, Random Forest, Neural Network
 
 ## Project Sections
 - [Raw Data](./RAW_DATA.md)
@@ -15,9 +20,13 @@ Using publicly available datasets, the goal was to determine whether higher crim
 - [Analysis](./ANALYSIS.md)
 - [Conclusions](./CONCLUSIONS.md)
 
-## What I Learned
-- Crime rates vary significantly across LA neighborhoods
-- Certain areas with higher crime show differences in Airbnb density
-- Machine learning models had limited predictive power, suggesting other factors influence Airbnb listings
+## Key Takeaways
+- Airbnb listings naturally group into distinct clusters based on price, size, and availability
+- A small number of features explain most of the variance in the dataset (via PCA)
+- Regression models show moderate ability to predict price
+- Classification models struggled, suggesting weak predictive signals
+- Crime rate was not a strong standalone predictor of Airbnb patterns
+
   
-This project helped me understand the full machine learning pipeline, including data cleaning, feature engineering, and model evaluation. I also learned that real-world data is often messy and relationships are not always as strong as expected.
+## What I Learned
+This project demonstrated that real world datasets often contain week or indirect relationships. While machine learning models can identify structure within Airbnb data, external factors like crime do not strongly explain listing behavior on their own.
